@@ -1,0 +1,6 @@
+var db_creds = {
+    host     : 'localhost',
+    user     : ' ',
+    password : ' ',
+    database : ' '
+}

@@ -1,0 +1,16 @@
+{
+  "name": "cashgame",
+  "main": "index.html",
+  "window": {
+    "title": "Cash Game",
+    "toolbar": false,
+    "width": 1024,
+    "height": 640,
+    "min_width": 800,
+    "min_height": 600,
+    "frame": false
+  },
+  "webkit": {
+    "plugin": true
+  }
+}

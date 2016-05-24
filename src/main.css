@@ -1,0 +1,191 @@
+.no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.win-drag {
+  -webkit-app-region: drag;
+}
+.win-nodrag {
+  -webkit-app-region: no-drag;
+}
+.card-nohover {
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.card {
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.2s ease-in-out;
+}
+.card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.card-transparent {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.2s ease-in-out;
+}
+.card-transparent:hover {
+  background-color: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.btn-circle {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  height: 34px;
+  width: 34px;
+  border-radius: 100%;
+  font-size: 18px;
+  margin: 0px 8px;
+  transition: all 0.2s ease-in-out;
+}
+.btn-circle:hover {
+  color: white;
+  cursor: pointer;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.5);
+  display: hidden;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  display: hidden;
+}
+::-webkit-scrollbar-button {
+  display: none;
+  height: 0px;
+  width: 0px;
+}
+::-webkit-scrollbar-corner {
+  background-color: black;
+  display: none;
+}
+.window.login {
+  -webkit-app-region: drag;
+}
+.window.login.invisible {
+  display: none;
+}
+.window.login > .login_fields {
+  -webkit-app-region: no-drag;
+  width: 300px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -70px 0 0 -170px;
+}
+.window.login > .login_fields > .btn_start {
+  width: 100%;
+  margin-top: 20px;
+}
+/* label color */
+.input-field label {
+  color: #b0bec5;
+}
+/* label focus color */
+.input-field input:focus + label {
+  color: #b0bec5;
+}
+.input-field > input {
+  color: #eceff1;
+}
+/* label underline focus color */
+.input-field input:focus {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("includes/roboto/Roboto-Regular.ttf") format("truetype");
+}
+* {
+  font-family: 'Roboto', sans-serif;
+}
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+html {
+  box-sizing: border-box;
+  background-color: #37474f;
+}
+body {
+  -webkit-app-region: drag;
+  padding-top: 30px;
+}
+body > * {
+  -webkit-app-region: no-drag;
+}
+.window {
+  width: 100%;
+  height: 100%;
+  background-color: #37474f;
+}
+#menu_bar {
+  -webkit-app-region: no-drag;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 10;
+  text-align: right;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+#menu_bar > button {
+  width: 17px;
+  height: 17px;
+  border-radius: 100%;
+  display: inline-block;
+  margin-top: 7px;
+  outline: none;
+  border: none;
+  margin-right: 8px;
+}
+#menu_bar > .dev {
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  margin-top: 4px;
+}
+#menu_bar > .dev > .fa {
+  color: #b0bec5;
+}
+#menu_bar > .minimize {
+  background-color: #4caf50;
+}
+#menu_bar > .maximize {
+  background-color: #ffc107;
+}
+#menu_bar > .close {
+  background-color: #f44336;
+}
+body > .progress {
+  position: absolute !important;
+  bottom: -4px;
+  margin-bottom: 0px !important;
+  transition: bottom ease-in-out 0.1s;
+}
+body > .progress.active {
+  bottom: 0px;
+}

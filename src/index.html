@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- jQuery -->
+    <script src="includes/jquery/jquery-2.2.0.min.js"></script>
+    <script src="includes/jquery/colResizable-1.5.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="includes/font-awesome/css/font-awesome.min.css"/>
+
+    <!-- Materialize -->
+    <link rel="stylesheet" href="includes/materialize/css/materialize.css"/>
+    <script src="includes/materialize/js/materialize.min.js"></script>
+
+    <link rel="stylesheet" href="main.css"/>
+
+    <script src="includes/config" type="text/javascript"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/database.js"></script>
+    <script src="js/user.js"></script>
+
+
+</head>
+<title>Cash Game</title>
+<body>
+
+    <div id="menu_bar">
+        <button class="dev" onclick="win.showDevTools();"><i class="fa fa-wrench" aria-hidden="true"></i></button>
+        <button class="minimize" onclick="win.minimize()"></button>
+        <button class="maximize" onclick="winResize()"></button>
+        <button class="close" onclick="winClose()"></button>
+    </div>
+
+    <div class="window login">
+        <div class="login_fields">
+            <div class="input-field">
+                <input id="login_email" type="text" class="validate">
+                <label for="login_email">Email</label>
+            </div>
+            <div class="input-field">
+                <input id="login_password" type="password" class="validate">
+                <label for="login_password">Password</label>
+            </div>
+            <a class="btn_start waves-effect waves-light btn" onclick="btn_login()">START</a>
+        </div>
+    </diV>
+
+    <div class="window main">
+        fgsdgf
+    </div>
+
+    <div class="progress">
+      <div class="indeterminate"></div>
+    </div>
+
+</body>
+</html>
