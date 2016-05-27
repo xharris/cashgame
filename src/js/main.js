@@ -40,7 +40,11 @@ function showToast(msg, duration) {
 }
 
 $(function(){
-	DB.connect();
+	DB.connect(function(){
+		Status.getStatusFromID(1,'male',function(name){
+			console.log(name)
+		});
+	});
 
 	/*
 	client = nwMSG.createSpeaker('8000');
@@ -77,5 +81,6 @@ function loginUser(username, password) {
 		else if (status == 3) {
 			showToast("Wrong password/username!", 4000);
 		}
+
 	});
 }

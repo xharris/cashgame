@@ -1,20 +1,17 @@
 var DB = {
     connection : {},
 
-    connect: function() {
+    connect: function(callback) {
         this.connection = nwSQL.createConnection({
             host     : db_creds.host,
             user     : db_creds.user,
             password : db_creds.password,
-            database : db_creds.database
+            database : db_creds.database,
+            multipleStatements: true
         });
 
         this.connection.connect(function(err){
-          if(err){
-            return 'Error connecting to Db';
-          }
-          console.log();
-          return 'Connection established'
+            callback(err)
         });
 
     },
